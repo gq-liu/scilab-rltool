@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<refentry version="5.0-subset Scilab" xml:id="rltool_license" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook">
+  <info>
+    <pubdate>$LastChangedDate: 2008-03-26 09:50:39 +0100 (mer., 26 mars 2008)
+    $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>Licence</refname>
+
+    <refpurpose> Licence</refpurpose>
+  </refnamediv>
+
+
+  <refsection>
+    <title>Description</title>
+
+    <para> 'Rltool for Scilab' is a Scilab based GUI package. (C) Ishan Pendharkar, 2001-2005
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or 
+ (at your option) any later version.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of 
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+ GNU General Public License for more details at http://www.opensource.org.</para>
+
+  </refsection>
+
+
+  <refsection>
+    <title>Authors</title>
+
+    <simplelist type="vert">
+      <member>Holger Nahrstaedt - 2010</member>
+      <member>Ishan   Pendharkar - 2007</member>
+    </simplelist>
+  </refsection>
+</refentry>

@@ -1,0 +1,130 @@
+                RLTOOL for Scilab
+                ===========================
+A graphics based tool for designing SISO systems by Ishan Pendharkar.
+Ported from Holger  Nahrstaedt to scilab 5.3
+
+RLTOOL (version 1.7) 
+======================
+
+Information about current version of RLTOOL can be found at 
+http://wwwa.mpi-magdeburg.mpg.de/people/ishan/scilab/rltool.htm
+
+This url also shows older versions and the current (unstable) one.
+
+The program has been written by 
+Ishan Pendharkar.
+
+for suggestions, bug reports, bouquets, brickbats, etc email: 
+"ishan dot pendharkar at gmail dot com" (remove spaces and put the 
+appropriate characters)
+
+LICENSE
+=======
+
+GNU
+
+Installation
+============
+We Suppose here that <PATH> stands for  the path of the directory
+containing this README file.
+
+- On Unix/Linux systems
+     * Administrator
+        Has to execute, ONCE, the following instruction 
+        within Scilab:
+        exec <PATH>/builder.sce 
+       	This operation requires permission to write in <PATH>/macros to 
+	generate *.bin, names and lib files. 
+     * User
+        Should execute the following instruction within Scilab:
+        exec <PATH>/loader.sce 
+        before using the toolbox, he  can also put it  in his
+        .scilab startup file for automatic loading.
+
+	Note that a user will have to execute <PATH>/loader.sce EVERY TIME 
+	after starting a NEW Scilab session before using RLTOOL.
+
+- On Windows systems
+     * Administrator
+        Has to execute, ONCE the following instruction 
+        within Scilab:
+        exec <PATH>\builder.sce 
+        This operation requires permission to
+        write in <PATH>\macros to generate *.bin, names and lib files 
+     * User
+        Should execute the following instruction within Scilab:
+        exec <PATH>\loader.sce
+        before using the toolbox, he  can also put it  in his
+        .scilab startup file for automatic loading.
+
+	Note that a user will have to execute <PATH>\loader.sce EVERY TIME 
+	after starting a NEW Scilab session before using RLTOOL.
+
+
+NOTES:
+=====
+	- FOR UNIX/LINUX users 
+	++++++++++++++++++++++
+	* "Administrator" need not be ROOT. Administrator denotes ANYONE 
+	who has permission to write in <PATH>/macros. Suppose I (Ishan) have
+	downloaded rltool-1.*.tar.gz into my home directory /home/ishan
+	I do the following to start using RLTOOL
+	
+	step 1. "untar" the zipped file. The fact that you are reading this
+	README shows you completed step 1 :) This has generated a directory 
+	called rltool in my home directory. So my PATH is /home/ishan/rltool
+
+	step 2. start scilab
+
+	step 3. At the scilab prompt, type
+	--> exec /home/ishan/rltool/builder.sce
+
+	you need to do this only ONCE. This "compiles" the *.sci files 
+	and generated binary files.
+
+	step 4. To "load" rltool into Scilab, type the following at the
+	Scilab prompt
+	--> exec /home/ishan/rltool/loader.sce
+
+	you will need to "load" rltool every time you start a FRESH scilab 
+	session, or issue an explicit "clear" instruction at the Scilab prompt
+
+	step 5. type rlt() to start using rltool 
+
+
+	step 6 If you are indeed the root, you may want to "build" rltool once 
+	so that multiple users can access it simultaneously. 
+
+
+  	-For Windows users
+	+++++++++++++++++
+	Same as for Linux above, only replace "/" with "\". Your PATH typically would be C:\rltool.
+
+	The complete HTML manual of rltool comes along with the package. You cannot
+	currently access it from within Scilab. To view the manual, please direct
+	your favourite web browser to the location
+	PATH\man\whatis.htm. You can access this manual directly from Scilab on 
+	a *nix installation. A PDF version of the manual is available at 
+	PATH\man\whatis.pdf 
+
+
+Contents
+========
+README             : this file
+CHANGES		   : Some changes and bug fix reports
+KNOWN_BUGS	   : Couldn't fix these! 	
+ACKNOWLEDGMENT	   : For help received from various quarters.		
+loader.sce         : installation script
+builder.sce        : script for buliding library
+helploader.sce	   : script for loading a html viewer on *nix machines.
+macros             : directory of Scilab functions
+     *.sci         : source versions
+     *.bin         : precompiled binary versions (generated)
+     names         : table of functions (generated)
+     lib           : scilab library binary save (generated)
+     man           : directory for help.
+     *.cat         : formatted text files for Scilab ver. 2.6 and below.
+     *.htm	   : formatted html files for Scilab ver. 2.7 and above.
+     whatis        : short function description 
+devel		   : directory containing information for developers	
+

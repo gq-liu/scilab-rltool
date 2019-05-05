@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+            "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="GENERATOR" content="hevea 1.07">
+<TITLE>
+Error and warning messages
+</TITLE>
+</HEAD>
+<BODY >
+<A HREF="whatis003.html"><IMG SRC ="previous_motif.gif" ALT="Previous"></A>
+<A HREF="index.html"><IMG SRC ="contents_motif.gif" ALT="Up"></A>
+<A HREF="whatis005.html"><IMG SRC ="next_motif.gif" ALT="Next"></A>
+<HR>
+
+<H1><A NAME="htoc23"><FONT COLOR="#ff0000">Chapter&nbsp;4</FONT></A><FONT COLOR="#ff0000">&nbsp;&nbsp;Error and warning messages</FONT></H1><FONT COLOR="#ff0000">
+</FONT></TD>
+</TR></TABLE>
+<OL type=1><LI>
+ ``Error Entering input'': There is an error while entering
+ numerator and denominator polynomials. Ensure that the entered
+ format is correct. For example, a polynomial <I>s</I><SUP><FONT SIZE=2>2</FONT></SUP>+3<I>s</I>+2 should be
+ entered as <I>s</I><SUP><FONT SIZE=2>2</FONT></SUP>+3*<I>s</I>+2. 
+<LI>``Numerator and denominator are equal'': This error message is
+ displayed when all poles and zeros of your transfer function
+ cancel each other and you get a constant, memoryless system. 
+<LI>``plzr() function couldnot handle your transfer function. See Scilab error code 60'': This is typically displayed when you have
+ very high gains in the system (order of 1e10) and calculations are very sensitive. Reduce the maximum permissible gain of the
+ rootlocus plot. 
+<LI>``Warning! I need write permission in &lt;directory name&gt;. Please change your present working directory'':This warning is
+ displayed when your present working directory is one in which you don't have a write permission. Set your appropriate
+ working directory using "Settings-&gt;PWD". 
+<LI>``Warning! Couldnot undo changes. No previous data available'': This warning is displayed when you don't have read /write
+ permission in your present working directory. Solution is as above. 
+<LI>``Sorry! I couldnot plot your step/ramp/impulse response. Due to numerical tolerances a pole zero cancellation has occured.
+ Please reselect the point'': This error message is displayed when the closed loop transfer function is not proper (due to
+ spurious pole-zero cancellations). Please reduce the maximum permissible gain in Settings-&gt;Rootlocus. or zoom the branch
+ of the rootlocus before selecting the point 
+<LI>``Sorry! I couldnot plot your frequency response. Due to numerical tolerances a pole zero cancellation has occured. Please
+ reselect the point''. Same as above. 
+<LI>``Error entering input. Input is not single valued'': While defining the arbitrary input, ensure that (1) input is piecewise linear (2)
+ continuous (3) Single valued. If you don't ensure these, you will see this error. You will be prompted to select the response
+ again. 
+<LI>``Error Saving Plant. Ensure that you have write permissions'': You don't have write permission in your pwd. 
+<LI>``Error loading Plant. Ensure that the file exists and you have
+ read permission'': Either the file you are asking for doesn't exist
+ or you don't have read permission. Change your pwd() or check the
+ filename. 
+</OL>
+
+<TABLE CELLPADDING=10>
+<TR><TD BGCOLOR="#00ffff">
+<FONT COLOR="#ff0000">
+</FONT><HR>
+<A HREF="whatis003.html"><IMG SRC ="previous_motif.gif" ALT="Previous"></A>
+<A HREF="index.html"><IMG SRC ="contents_motif.gif" ALT="Up"></A>
+<A HREF="whatis005.html"><IMG SRC ="next_motif.gif" ALT="Next"></A>
+</BODY>
+</HTML>

@@ -1,0 +1,29 @@
+<FONT COLOR="#ff0000">\@addtocsec{htoc}{1}{-1}{\@print{Chapter&nbsp;1}\quad{}Overview of Rltool for Scilab}
+</FONT><FONT COLOR="#000000">\@addtocsec{htoc}{2}{0}{\@print{1.1}\quad{}Description}
+</FONT><FONT COLOR="#000000">\@addtocsec{htoc}{3}{0}{\@print{1.2}\quad{}Targetted users}
+</FONT><FONT COLOR="#000000">\@addtocsec{htoc}{4}{0}{\@print{1.3}\quad{}Features}
+</FONT><FONT COLOR="#000000">\@addtocsec{htoc}{5}{0}{\@print{1.4}\quad{}How to install Rltool for Scilab}
+</FONT>\@addtocsec{htoc}{6}{1}{\@print{1.4.1}\quad{}For Linux users}
+\@addtocsec{htoc}{7}{1}{\@print{1.4.2}\quad{}For Windows users}
+<FONT COLOR="#ff0000">\@addtocsec{htoc}{8}{-1}{\@print{Chapter&nbsp;2}\quad{}Detailed Help on usage}
+</FONT><FONT COLOR="#000000">\@addtocsec{htoc}{9}{0}{\@print{2.1}\quad{}Starting RLTOOL}
+</FONT><FONT COLOR="#000000">\@addtocsec{htoc}{10}{0}{\@print{2.2}\quad{}Rootlocus}
+</FONT>\newlabel{rootlocus}{{2.2.0}{X}}
+\@addtocsec{htoc}{11}{0}{\@print{2.3}\quad{}The control center}
+\@addtocsec{htoc}{12}{0}{\@print{2.4}\quad{}Frequency design}
+\@addtocsec{htoc}{13}{0}{\@print{2.5}\quad{}Editing of Plants}
+\newlabel{plant}{{2.5.0}{X}}
+\@addtocsec{htoc}{14}{0}{\@print{2.6}\quad{}Closed loop responses}
+\newlabel{closedloop}{{2.6.0}{X}}
+\@addtocsec{htoc}{15}{0}{\@print{2.7}\quad{}Other responses}
+\@addtocsec{htoc}{16}{1}{\@print{2.7.1}\quad{}Nyquist plot}
+\@addtocsec{htoc}{17}{1}{\@print{2.7.2}\quad{}Nichols plot}
+\@addtocsec{htoc}{18}{1}{\@print{2.7.3}\quad{}Popov plot}
+\@addtocsec{htoc}{19}{0}{\@print{2.8}\quad{}Saving and loading plants}
+\@addtocsec{htoc}{20}{0}{\@print{2.9}\quad{}Settings}
+\newlabel{settings}{{2.9.0}{X}}
+\@addtocsec{htoc}{21}{0}{\@print{2.10}\quad{}Help}
+<FONT COLOR="#ff0000">\@addtocsec{htoc}{22}{-1}{\@print{Chapter&nbsp;3}\quad{}Some FAQs}
+</FONT><FONT COLOR="#ff0000">\@addtocsec{htoc}{23}{-1}{\@print{Chapter&nbsp;4}\quad{}Error and warning messages}
+</FONT><FONT COLOR="#ff0000">\@addtocsec{htoc}{24}{-1}{\@print{Chapter&nbsp;5}\quad{}Acknowledgment}
+</FONT>

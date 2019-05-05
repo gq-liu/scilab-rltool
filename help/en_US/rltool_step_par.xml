@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<refentry version="5.0-subset Scilab" xml:id="rltool_step_par" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook">
+  <info>
+    <pubdate>$LastChangedDate: 2008-03-26 09:50:39 +0100 (mer., 26 mars 2008)
+    $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>Step response parameters</refname>
+
+    <refpurpose> Step response parameters</refpurpose>
+  </refnamediv>
+
+
+  <refsection>
+    <title>Description</title>
+
+    <para> The following step response parameters
+can be seen: rise time, settling time, peak time, 
+percent peak overshoot, damping ratio (second order
+approximation). There are two ways to view these.
+(1) Select 'Response-->Details' and then 'Step'.
+This will bring up a menu that shows the numerical
+values of these parameters
+ </para><para> 
+(2) Select 'Response-->Closed loop'.
+Select ''Step response parameters'' in the menu that comes up.
+ </para>
+
+  </refsection>
+
+
+  <refsection>
+    <title>Authors</title>
+
+    <simplelist type="vert">
+      <member>Holger Nahrstaedt - 2010</member>
+      <member>Ishan   Pendharkar - 2007</member>
+    </simplelist>
+  </refsection>
+</refentry>

@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>Overview of Rltool for Scilab</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.0  (Linux)">
+	<META NAME="CREATED" CONTENT="20070628;11353700">
+	<META NAME="CHANGED" CONTENT="20070628;11373800">
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P STYLE="margin-bottom: 0in"><A HREF="index.html"><FONT COLOR="#000080"><IMG SRC="contents_motif.gif" NAME="graphics1" ALT="Up" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=1></FONT></A>
+<A HREF="whatis002.html"><FONT COLOR="#000080"><IMG SRC="next_motif.gif" NAME="graphics2" ALT="Next" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=1></FONT></A>
+</P>
+<HR>
+<H1><A NAME="htoc1"></A><FONT COLOR="#ff0000">Chapter&nbsp;1&nbsp;&nbsp;Overview
+of Rltool for Scilab</FONT></H1>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><IMG SRC="whatis001.gif" NAME="graphics3" ALIGN=BOTTOM WIDTH=302 HEIGHT=139 BORDER=0></P>
+<P STYLE="margin-bottom: 0in">Welcome to help pages of RLTOOL,
+version 1.7. The latest details about RLTOOL are available at: 
+</P>
+<P STYLE="margin-bottom: 0in"><A HREF="http://wwwa.mpi-magdeburg.mpg.de/people/ishan/scilab/rltool.htm">http://wwwa.mpi-magdeburg.mpg.de/people/ishan/scilab/rltool.htm</A></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><B>If you are using
+Rltool, you are requested to send a e-mail with the subject
+``rltool'' to <A HREF="mailto:ishan.pendharkar@gmail.com">ishan.pendharkar@gmail.com</A>.
+Your e-mail address will&nbsp; be kept confidential.</B> 
+</P>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#bcff3d">
+			<H2><A NAME="toc1"></A><A NAME="htoc2"></A><FONT COLOR="#000000">1.1&nbsp;&nbsp;Description</FONT></H2>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0in">Rltool for Scilab is a graphics based
+tool for designing compensators for SISO continuous plants. 
+</P>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#bcff3d">
+			<H2><A NAME="toc2"></A><A NAME="htoc3"></A><FONT COLOR="#000000">1.2&nbsp;&nbsp;Targetted
+			users</FONT></H2>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0in">The intention behind developing this
+package is to provide a free and easy to use tool for students taking
+a first course in control engineering. Learning is more fun if
+computer based teaching is used to supplement classroom lectures. It
+is intended to make Rltool for Scilab as simple and user friendly as
+possible and yet have some powerful and innovative features. 
+</P>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#bcff3d">
+			<H2><A NAME="toc3"></A><A NAME="htoc4"></A><FONT COLOR="#000000">1.3&nbsp;&nbsp;Features</FONT></H2>
+		</TD>
+	</TR>
+</TABLE>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in">Handle single input single output
+	(SISO) continuous time transfer functions. 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in">Choose between Time Domain and
+	Frequency Domain Design. 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in">Edit of poles and zeros at the
+	click of a mouse. 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in">View various openloop and closed
+	loop plots. 
+	</P>
+	<LI><P>Save and Load plants as required. 
+	</P>
+</OL>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#bcff3d">
+			<H2><A NAME="toc4"></A><A NAME="htoc5"></A><FONT COLOR="#000000">1.4&nbsp;&nbsp;How
+			to install Rltool for Scilab</FONT></H2>
+		</TD>
+	</TR>
+</TABLE>
+<H3>1.4.1&nbsp;&nbsp;For Linux users</H3>
+<P>I assume that you have obtained the file rltool1.*.tar.gz and have
+saved it at the location ``PATH'' on your computer. For example, I
+have downloaded the file in my home directory <TT>/home/ishan/ so
+PATH=/home/ishan </TT>
+</P>
+<OL>
+	<LI><P>Unzip the zipped file. This has generated a directory called
+	rltool in my home directory. 
+	</P>
+	<LI><P>Start scilab</P>
+	<LI><P>At the scilab prompt, type<BR><TT>--&gt; exec
+	PATH/rltool/builder.sce (in my case exec
+	/home/ishan/rltool/builder.sce)</TT><BR>you need to do this only
+	ONCE. This ``compiles'' the *.sci files and generates binary files.</P>
+	<LI><P>To ``load'' rltool into Scilab, type the following at the
+	Scilab prompt<BR><TT>--&gt; exec PATH/rltool/loader.sce</TT><BR>you
+	will need to ``load'' rltool every time you start a FRESH scilab
+	session, or issue an explicit ``clear'' instruction at the Scilab
+	prompt</P>
+	<LI><P>Type rlt() to start using rltool 
+	</P>
+	<LI><P>If you are the root, you may want to ``build'' rltool once so
+	that multiple users can access it simultaneously.</P>
+</OL>
+<H3>1.4.2&nbsp;&nbsp;For Windows users</H3>
+<P>I assume that you have obtained the file rltool1.*.tar.gz and have
+saved it at the location ``PATH'' on your computer. For example, I
+have downloaded the file in my home directory <TT>C:\ishan </TT>,
+hence <TT>PATH = C:\ishan</TT> 
+</P>
+<OL>
+	<LI><P>Unzip the zipped file.&nbsp; This has generated a directory
+	called rltool in my home directory. 
+	</P>
+	<LI><P>Start scilab</P>
+	<LI><P>At the scilab prompt, type<BR><TT>--&gt; exec
+	PATH\rltool\builder.sce (in my case C:\ishan\rltool\builder.sce)</TT><BR>you
+	need to do this only ONCE. This ``compiles'' the *.sci files and
+	generated binary files.</P>
+	<LI><P STYLE="margin-bottom: 0in">To ``load'' rltool into Scilab,
+	type the following at the Scilab prompt<BR><TT>--&gt; exec
+	PATH\rltool\loader.sce</TT><BR>you will need to ``load'' rltool
+	every time you start a FRESH scilab session, or issue an explicit
+	``clear'' instruction at the Scilab prompt 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in">Type rlt() to start using rltool 
+	</P>
+	<LI><P>If you are the administrator, you may want to ``build''
+	rltool once so that multiple users can access it simultaneously.</P>
+</OL>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#00ffff">
+			<HR>
+			<P><A HREF="index.html"><FONT COLOR="#000080"><IMG SRC="contents_motif.gif" NAME="graphics4" ALT="Up" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=1></FONT></A>
+						<A HREF="whatis002.html"><FONT COLOR="#000080"><IMG SRC="next_motif.gif" NAME="graphics5" ALT="Next" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=1></FONT></A></P>
+		</TD>
+	</TR>
+</TABLE>
+<P><BR><BR>
+</P>
+</BODY>
+</HTML>

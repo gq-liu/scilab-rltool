@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+            "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="GENERATOR" content="hevea 1.07">
+<TITLE>
+Some FAQs
+</TITLE>
+</HEAD>
+<BODY >
+<A HREF="whatis002.html"><IMG SRC ="previous_motif.gif" ALT="Previous"></A>
+<A HREF="index.html"><IMG SRC ="contents_motif.gif" ALT="Up"></A>
+<A HREF="whatis004.html"><IMG SRC ="next_motif.gif" ALT="Next"></A>
+<HR>
+
+<H1><A NAME="htoc22"><FONT COLOR="#ff0000">Chapter&nbsp;3</FONT></A><FONT COLOR="#ff0000">&nbsp;&nbsp;Some FAQs</FONT></H1><FONT COLOR="#ff0000">
+</FONT></TD>
+</TR></TABLE>
+Q. Can I see this HTML manual from within RLTOOL?<BR>
+A. On *nix systems, you can set your default browser path in
+``Settings <FONT FACE=symbol>®</FONT>browser path''. Click on ``Help <FONT FACE=symbol>®</FONT>HTML manual'' to load this html manual in your favourite browser. I do
+not know how to implement this for windows. If you do, please get in
+touch with me.<BR>
+<BR>
+Q. What sort of plants does RLTOOL handle? <BR>
+A. RLTOOL, ver 1.6 handles real valued SISO continuous time plants
+(proper scalar transfer functions). <BR>
+<BR>
+Q. How do I enter transfer functions for RLTOOL? <BR>
+A. The default value is 1/<I>s</I>. You can change this by editing the
+numerator and denominator. You should enter these as polynomials in
+<I>s</I>. For example, 3<I>s</I><SUP><FONT SIZE=2>2</FONT></SUP>+2<I>s</I>+5 should be entered as 3*<I>s</I><SUP><FONT SIZE=2>2</FONT></SUP>+2*<I>s</I>+5. <BR>
+<BR>
+Q. My rootlocus plot shows "hanging" incomplete lines, what should I
+do? <BR>
+A. You need to increase the maximum allowable gain. To do this, write
+the appropriate value in Settings --&gt; Rootlocus. <BR>
+<BR>
+Q. I can't make out details on my rootlocus plot, what should I do? <BR>
+A. Use the zoom utility for a bigger picture. Alternately, reduce the maximum allowed gain and you would get a more detailed plot. <BR>
+<BR>
+Q. Though I don't click on a open loop pole/zero, the mouse handler reads the click as a open loop pole/zero, what should I do? <BR>
+A. This happens because of tolerances set in RLTOOL. You can change the tolerances in Limits() macro. Alternately, ZOOM the
+region before selecting the point. <BR>
+<BR>
+Q. Why is my Nyquist plot drawn only for positive frequencies? Why is it coarse? <BR>
+A. This is the default. You can put the lower limit of frequency as -1000 Hz for instance and you would get a symmetric Nyquist plot.
+If it is too coarse, reduce the step size. This can be found in
+Settings --&gt; Nyquist plot. <BR>
+<BR>
+Q. I can't UNDO changes to my plant, what should I do? <BR>
+A. RLTOOL requires to save your configuration details in a file called .rltoolcfg.sci. This is located in your present working directory.
+If you don't have write permissions in your present working directory,
+a warning message is displayed and you can't use the UNDO feature. <BR>
+<BR>
+Q. Which dynamic responses can I see? <BR>
+A. You can view the following CLOSED LOOP responses: IMPULSE, STEP, RAMP, ARBITRARY INPUT.
+Click on Response --&gt; Dynamic to select the "operating point" on the
+rootlocus. You will then see a pop-up window which will prompt 
+you to select the desired plot. <BR>
+<BR>
+Q. Can I simulate with any arbitrary inputs? <BR>
+A. No! At present you can simulate with inputs that are (1) piece-wise linear (2) continuous (3) single-valued. You will receive an
+error message if your input is not of this type. <BR>
+<BR>
+Q. Can I change the size of the plotting frame in defining the
+arbitrary input? <BR>
+A. Yes, click on Edit-&gt;size in the plotting frame. Enter the required x and y co-ordinates. The default is x=[0,1], y=[0,1]. You may
+change these as required. <BR>
+<BR>
+Q. My step/ramp/impulse response is incomplete/coarse, what should I do? <BR>
+A. You need to set parameters for maximum time for incomplete response. For a finer resolution, decrease the step size. These
+settings are located at Settings --&gt; Dynamic response. <BR>
+<BR>
+Q. Sometimes I see an error message while plotting the step response/ frequency response why is this? What should I do about it? <BR>
+A. This happens when the pole and zero are too close by and the mouse handler can't distinguish between the two points. When pole
+and zero are close by, zoom the region by the ZOOM utility before selecting a point (gain). <BR>
+<BR>
+Q. What should I do if I get a warning/error message? <BR>
+A. Look up the quick reference on errors or warnings in RLTOOL. It will probably help you remove your error. <BR>
+<BR>
+Q. I think I have found a bug, what should I do? <BR>
+A. Please mail the bug report to ishan[AT]iitbombay.org. I would appreciate if you also let me know the remedy. It will help improve
+RLTOOL. <BR>
+<BR>
+Q. My RLTOOL crashes , what should I do? <BR>
+A. Mail your "plant" along with the explicit details to the author. It will help improve RLTOOL. <BR>
+<BR>
+Q. I would like the feature XYZ to be in RLTOOL, what should I do? <BR>
+A. Code it into RLTOOL and submit a fresh update. Alternately, let me know about it by e-mail. I shall try to add that feature
+sometime... <BR>
+<BR>
+END OF FAQ. <BR>
+<BR>
+
+<TABLE CELLPADDING=10>
+<TR><TD BGCOLOR="#00ffff">
+<FONT COLOR="#ff0000">
+</FONT><HR>
+<A HREF="whatis002.html"><IMG SRC ="previous_motif.gif" ALT="Previous"></A>
+<A HREF="index.html"><IMG SRC ="contents_motif.gif" ALT="Up"></A>
+<A HREF="whatis004.html"><IMG SRC ="next_motif.gif" ALT="Next"></A>
+</BODY>
+</HTML>

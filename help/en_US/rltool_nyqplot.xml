@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<refentry version="5.0-subset Scilab" xml:id="rltool_nyqplot" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook">
+  <info>
+    <pubdate>$LastChangedDate: 2008-03-26 09:50:39 +0100 (mer., 26 mars 2008)
+    $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>Nyquist and Nichols plots</refname>
+
+    <refpurpose>  Plot of  (open   loop)    transfer   function</refpurpose>
+  </refnamediv>
+
+
+  <refsection>
+    <title>Description</title>
+
+    <para> Select 'Response->Nyquist' for Nyquist Plot
+of  (open   loop)    transfer   function.
+The default minimum frequency  is 0.01 rad/sec.
+The default maximum frequency  is 1000 rad/sec.
+To change these: 'Settings->Nyquist-Nichols Plot'.
+  </para><para>
+Select 'Response->Nichols' for Blacks(Nichols) Plot.
+Default values for Nichols and Nyquist plots are the same.
+You can see these plots both in rad/sec and Hz units.
+using the 'Settings-->Frequency units' option.</para>
+
+  </refsection>
+
+
+  <refsection>
+    <title>Authors</title>
+
+    <simplelist type="vert">
+      <member>Holger Nahrstaedt - 2010</member>
+      <member>Ishan   Pendharkar - 2007</member>
+    </simplelist>
+  </refsection>
+</refentry>

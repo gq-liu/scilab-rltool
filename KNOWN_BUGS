@@ -1,0 +1,16 @@
+
+The new graphics style isn't fully developed. All plots are rendered in a "jittery" manner. I hope things will get better with the next version of Scilab. 
+
+sgrid() doesn't work too well. It overwrites the rootlocus branches and at 
+times the values of zeta aren't seen. This might need modification of the 
+native scilab code. 
+
+gain margin routine of scilab seems to have a bug. Rltool crashes due to 
+this (?) for certain transfer functions.
+
+Scilab mouse handler can not recognize co-ordinates in subplots. Hence, I have not been able to implement mouse-aided controls in frequency domain. The values displayed along with the bode plot in Design-->Frequency mode are therefore incorrect.
+
+If you find any other bug, kindly let me know by e-mail. I shall be 
+thankful if you let me know the solution as well....
+
+*************end of file************************************************

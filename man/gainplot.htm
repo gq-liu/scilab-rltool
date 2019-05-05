@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-1">
+	<TITLE>gainplot</TITLE>
+	<META NAME="GENERATOR" CONTENT="StarOffice/5.2 (Linux)">
+	<META NAME="CREATED" CONTENT="20030711;23330500">
+	<META NAME="CHANGEDBY" CONTENT="Jose Paulo Vilela Soares da Cun">
+	<META NAME="CHANGED" CONTENT="20030711;23412400">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<P ALIGN=CENTER>Scilab Function 
+</P>
+<P><B>gainplot - magnitude plot </B>
+</P>
+<H3><FONT COLOR="#0000ff">Calling Sequence</FONT></H3>
+<DL>
+	<DD><TT>gainplot(sl,fmin,fmax [,step] [,comments] <TT><TT>[,f_unit]</TT></TT>)
+	</TT>
+	</DD><DD>
+	<TT>gainplot(frq,db,phi [,comments]<TT> <TT>[,f_unit]</TT></TT>) </TT>
+	</DD><DD STYLE="margin-bottom: 0.2in">
+	<TT>gainplot(frq, repf [,comments]<TT> <TT>[,f_unit]</TT></TT>) </TT>
+	</DD></DL>
+<H3>
+<FONT COLOR="#0000ff">Parameters</FONT></H3>
+<UL>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in"><TT><B>sl </B></TT>: list (<TT><B>syslin</B></TT>
+		SIMO linear system). 
+		</P>
+		<LI><P STYLE="margin-bottom: 0in"><TT><B>fmin,fmax </B></TT>: real
+		scalars (frequency interval). 
+		</P>
+		<LI><P STYLE="margin-bottom: 0in"><TT><B>step </B></TT>: real
+		(discretization step (logarithmic scale)).</P>
+		<LI><P STYLE="margin-bottom: 0in"><TT><B>comments </B></TT>:
+		string.</P>
+		<LI><P STYLE="margin-bottom: 0in"><TT><B>frq </B></TT>: matrix (row
+		by row frequencies).</P>
+		<LI><P STYLE="margin-bottom: 0in"><TT><B>db,phi </B></TT>: matrices
+		(magnitudes (in dB) and phases (in degrees) corresponding to <TT><B>frq</B></TT>).</P>
+		<LI><P STYLE="margin-bottom: 0in"><TT><B>repf </B></TT>: complex
+		matrix. One row for each frequency response. 
+		</P>
+		<LI><P><TT><TT><B>f_unit</B></TT><B> </B></TT>: desired frequency
+		unit.</P>
+	</UL>
+</UL>
+<H3><FONT COLOR="#0000ff">Description</FONT></H3>
+<P>Same as bode but plots only the magnitude. 
+</P>
+<H3><FONT COLOR="#0000ff">Examples</FONT></H3>
+<UL>
+	<PRE>s=poly(0,'s')
+h=syslin('c',(s^2+2*0.9*10*s+100)/(s^2+2*0.3*10.1*s+102.01))
+gainplot(h,0.01,100,'(s^2+2*0.9*10*s+100)/(s^2+2*0.3*10.1*s+102.01)')
+xbasc()
+h1=h*syslin('c',(s^2+2*0.1*15.1*s+228.01)/(s^2+2*0.9*15*s+225))
+gainplot([h1;h],0.01,100,['h1';'h'])
+ </PRE>
+</UL>
+<H3><FONT COLOR="#0000ff">See Also</FONT></H3>
+<UL>
+	<P><TT><A HREF="bode.htm"><B>bode</B></A></TT>&nbsp;&nbsp;<TT><A HREF="black.htm"><B>black</B></A></TT>&nbsp;&nbsp;<TT><A HREF="nyquist.htm"><B>nyquist</B></A></TT>&nbsp;&nbsp;<TT><A HREF="../control/freq.htm"><B>freq</B></A></TT>&nbsp;&nbsp;<TT><A HREF="../control/repfreq.htm"><B>repfreq</B></A></TT>&nbsp;&nbsp;<TT><A HREF="../control/g_margin.htm"><B>g_margin</B></A></TT>&nbsp;&nbsp;<TT><A HREF="../control/p_margin.htm"><B>p_margin</B></A></TT>&nbsp;&nbsp;</P>
+</UL>
+</BODY>
+</HTML>

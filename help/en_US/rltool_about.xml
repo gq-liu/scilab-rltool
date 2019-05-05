@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<refentry version="5.0-subset Scilab" xml:id="rltool_about" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook">
+  <info>
+    <pubdate>$LastChangedDate: 2008-03-26 09:50:39 +0100 (mer., 26 mars 2008)
+    $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>About Rltool</refname>
+
+    <refpurpose> About Rltool</refpurpose>
+  </refnamediv>
+
+
+  <refsection>
+    <title>Description</title>
+
+    <para>  Rltool 1.7 has  been  developed  by  Ishan   Pendharkar at the
+Indian Institute of Technology Bombay, India (2002-2006), and 
+at the Max Planck Institute, Germany (2007- ), with inputs from:
+Jose  Paulo  Vilela  Soares  da  Cunha,  State  University  of 
+Rio de Janeiro - UERJ - Brazil.
+The following people provided valuable help and comments:
+Prof. John Bechoefer, Peter Auer. 
+If you are using Rltool, feel free to mail bouquets and brickbats
+to ishan[AT]iitbombay.org. Latest information about Rltool can 
+be obtained at:
+http://www.ee.iitb.ac.in/uma/~ishan/scilab/rltool.htm</para>
+     <para>
+If you use Rltool, the author shall be delighted to 
+hear from you. Please e-mail ishan@iitbombay.org])Closes the file.</para>
+
+  </refsection>
+
+
+  <refsection>
+    <title>Authors</title>
+
+    <simplelist type="vert">
+      <member>Holger Nahrstaedt - 2010</member>
+      <member>Ishan   Pendharkar - 2007</member>
+    </simplelist>
+  </refsection>
+</refentry>

@@ -1,0 +1,839 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>Detailed Help on usage</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.0  (Linux)">
+	<META NAME="CREATED" CONTENT="20070628;11381200">
+	<META NAME="CHANGED" CONTENT="20070628;12221400">
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P STYLE="margin-bottom: 0in"><A HREF="whatis001.html"><FONT COLOR="#800000"><IMG SRC="previous_motif.gif" NAME="graphics1" ALT="Previous" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=1></FONT></A>
+<A HREF="index.html"><FONT COLOR="#000080"><IMG SRC="contents_motif.gif" NAME="graphics2" ALT="Up" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=1></FONT></A><A HREF="whatis003.html"><FONT COLOR="#000080"><IMG SRC="next_motif.gif" NAME="graphics3" ALT="Next" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=1></FONT></A>
+</P>
+<HR>
+<H1><A NAME="htoc8"></A><FONT COLOR="#ff0000">Chapter&nbsp;2&nbsp;&nbsp;Detailed
+Help on usage</FONT></H1>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#bcff3d">
+			<H2><A NAME="toc5"></A><A NAME="htoc9"></A><FONT COLOR="#000000">2.1&nbsp;&nbsp;Starting
+			RLTOOL</FONT></H2>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0in">Load the rltool library as per
+instructions in the README file. If the library loads properly the
+following message is displayed on Scilab prompt: 
+</P>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#7f7f7f">
+			<P ALIGN=CENTER><TT><FONT COLOR="#000000">mode(-1);<BR>rltool is
+			loaded. Type &quot;rlt()&quot; to start rltool-1.6</FONT></TT></P>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0in">Type ``rlt()'' to start this programme.
+</P>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#bcff3d">
+			<H2><A NAME="toc6"></A><A NAME="htoc10"></A><FONT COLOR="#000000">2.2&nbsp;&nbsp;Rootlocus</FONT></H2>
+		</TD>
+	</TR>
+</TABLE>
+<P>On typing ``rlt()'', the you will see the following menu</P>
+<P><IMG SRC="welcomemsg.gif" NAME="graphics12" ALIGN=LEFT WIDTH=538 HEIGHT=199 BORDER=0><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in">Open- to open an already saved
+	rltool session</P>
+	<LI><P STYLE="margin-bottom: 0in">New – to start a new rltool
+	session</P>
+	<LI><P STYLE="margin-bottom: 0in">Credits – Information about
+	developers</P>
+	<LI><P STYLE="margin-bottom: 0in">Help – This help manual</P>
+	<LI><P STYLE="margin-bottom: 0in">Cancel – Close rltool and return
+	to the Scilab prompt</P>
+</OL>
+<P><BR><BR>
+</P>
+<P>If a new session is selected, the you will be prompted to enter
+the transfer function as numerator / denominator in the variable '<I>s</I>'.
+</P>
+<P><IMG SRC="EnterPlant.gif" NAME="graphics13" ALIGN=LEFT WIDTH=489 HEIGHT=213 BORDER=0><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P>Rltool will automatically load the plant you were working with in
+the previous session of rltool. Click ``Ok'' to confirm this plant.
+You may wish to edit the plant, in that case type in the new plant
+and click ``Ok''. You now see two windows as shown below</P>
+<P><IMG SRC="fullrlt.gif" NAME="graphics4" ALIGN=LEFT WIDTH=670 HEIGHT=408 BORDER=0><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P>Various components are maried in red. The Grey window to the right
+is the Control Center. Editing of the control loop can be done in the
+following ways</P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in">Changing plant/ controller or
+	sensor by clicking on the respective buttons and entering the
+	desired transfer functions</P>
+	<LI><P STYLE="margin-bottom: 0in">setting maximum gain of the root
+	locus plot</P>
+	<P STYLE="margin-bottom: 0in"></P>
+</OL>
+<P>The closed loop poles are highlighted by circles. <BR>This window
+is shown in Figure (2.1). The various menus in the window are: 
+</P>
+<TABLE WIDTH=987 BORDER=0 CELLPADDING=10 CELLSPACING=0>
+	<COL WIDTH=41>
+	<COL WIDTH=601>
+	<COL WIDTH=0>
+	<COL WIDTH=207>
+	<COL WIDTH=38>
+	<TR>
+		<TD COLSPAN=5 WIDTH=967 BGCOLOR="#7f7f7f">
+			<OL>
+				<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000">``File'':
+				Load, save or print the rootlocus. </FONT>
+				</P>
+				<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000">``Zoom'':
+				Select a part of the rootlocus using the mouse and zoom onto it. </FONT>
+				</P>
+				<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000">``UnZoom'':
+				See the entire rootlocus (remove Zoom, if any). </FONT>
+				</P>
+				<LI><P><FONT COLOR="#000000">``Grid'' : Menus under this head
+				control the apperance of grids on all plots. These are: </FONT>
+				</P>
+			</OL>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=41 VALIGN=TOP BGCOLOR="#7f7f7f"></TD>
+		<TD WIDTH=601 BGCOLOR="#bcff3d">
+			<OL TYPE=a>
+				<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000">``On'':
+				Put a cartesian grid on all plots in the current session. </FONT>
+				</P>
+				<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000">``Off'':
+				Remove (if already present) a cartesian grid from all plots in
+				the current session. </FONT>
+				</P>
+				<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000">``Zeta/Wn'':
+				Plot a constant <FONT FACE="symbol">z</FONT> and <FONT FACE="symbol">w</FONT><I><FONT SIZE=2><SUB>n</SUB></FONT></I>
+				curve on the rootlocus for a given value of <FONT FACE="symbol">z</FONT>
+				and <FONT FACE="symbol">w</FONT><I><FONT SIZE=2><SUB>n</SUB></FONT></I>.
+				</FONT>
+				</P>
+				<LI><P><FONT COLOR="#000000">``sgrid'': Plot a constant <FONT FACE="symbol">z</FONT>
+				and <FONT FACE="symbol">w</FONT><I><FONT SIZE=2><SUB>n</SUB></FONT></I>
+				grid on the rootlocus. </FONT>
+				</P>
+			</OL>
+		</TD>
+		<TD COLSPAN=3 WIDTH=285 VALIGN=TOP BGCOLOR="#7f7f7f"></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5 WIDTH=967 BGCOLOR="#7f7f7f">
+			<OL START=5>
+				<LI><P><FONT COLOR="#000000">``Response'': Various plots and
+				responses can be viewed. </FONT>
+				</P>
+			</OL>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=41 VALIGN=TOP BGCOLOR="#7f7f7f"></TD>
+		<TD COLSPAN=2 WIDTH=621 BGCOLOR="#bcff3d">
+			<OL TYPE=a>
+				<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000">``Closed
+				loop'': Closed loop responses for a given gain. More details are
+				given in Section </FONT><A HREF="#closedloop"><FONT COLOR="#000000">2.6</FONT></A><FONT COLOR="#000000">.
+				</FONT>
+				</P>
+				<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000">``Nyquist'':
+				Nyquist plot. </FONT>
+				</P>
+				<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000">``Nichols'':
+				Nichols chart. </FONT>
+				</P>
+				<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000">``Details'':
+				Numerical values of poles and zeros, gain etc. </FONT>
+				</P>
+				<LI><P><FONT COLOR="#000000">``Popov'': The Popov-plot of the
+				system. </FONT>
+				</P>
+			</OL>
+		</TD>
+		<TD COLSPAN=2 WIDTH=265 VALIGN=TOP BGCOLOR="#7f7f7f"></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5 WIDTH=967 BGCOLOR="#7f7f7f">
+			<OL START=6>
+				<LI><P><FONT COLOR="#000000">``Design'': There are two modes
+				available in Rltool, namely Rootlocus and Frequency. </FONT>
+				</P>
+			</OL>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=41 VALIGN=TOP BGCOLOR="#7f7f7f"></TD>
+		<TD COLSPAN=3 WIDTH=848 BGCOLOR="#bcff3d">
+			<OL TYPE=a>
+				<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000">``Root
+				Locus'': This is the default mode. Most options here are with a
+				view towards time-domain design. </FONT>
+				</P>
+				<LI><P><FONT COLOR="#000000">``Frequency'': This mode is still
+				under development. Currently very limited options are available,
+				like bode plots, sensitivity plots etc. </FONT>
+				</P>
+			</OL>
+		</TD>
+		<TD WIDTH=38 VALIGN=TOP BGCOLOR="#7f7f7f"></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5 WIDTH=967 BGCOLOR="#7f7f7f">
+			<OL START=7>
+				<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000">``Plant'':
+				This menu provides utilities for editing the system. More details
+				are given in Section </FONT><A HREF="#plant"><FONT COLOR="#000000">2.5</FONT></A><FONT COLOR="#000000">.
+				</FONT>
+				</P>
+				<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000">``Save'':
+				Save the current session and/or load previous sessions. </FONT>
+				</P>
+				<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000">``Settings'':
+				This menu provides all settings available to the user. More
+				details are given in Section </FONT><A HREF="#settings"><FONT COLOR="#000000">2.9</FONT></A><FONT COLOR="#000000">.
+				</FONT>
+				</P>
+				<LI><P STYLE="margin-bottom: 0in"><FONT COLOR="#000000">``Help'':
+				A short online help is included on most topics. Click the
+				sub-menu under this head to see the help. For example, help on
+				rootlocus is included in ``Help<FONT FACE="symbol">&reg;</FONT>Root
+				Locus''. </FONT>
+				</P>
+				<LI><P><FONT COLOR="#000000">``Measure'': This feature allows a
+				user to ``measure'' the gain at a point on the rootlocus. The
+				user is first prompted to select a point. If this point is on the
+				rootlocus, relevant information is displayed/updated. </FONT>
+				</P>
+			</OL>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#bcff3d">
+			<H2><A NAME="toc7"></A><A NAME="htoc11"></A>2.3&nbsp;&nbsp;The
+			control center</H2>
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR><BR>&nbsp;<IMG SRC="Rlt_GUI.jpg" NAME="graphics5" ALT="gui" ALIGN=BOTTOM WIDTH=222 HEIGHT=327 BORDER=0>
+&nbsp;<IMG SRC="gfb_mode.jpg" NAME="graphics6" ALT="gain in feedback" ALIGN=BOTTOM WIDTH=232 HEIGHT=325 BORDER=0>&nbsp;<IMG SRC="control_mode.jpg" NAME="graphics7" ALT="control mode" ALIGN=BOTTOM WIDTH=231 HEIGHT=323 BORDER=0>
+&nbsp; 
+</P>
+<P STYLE="margin-bottom: 0in">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Gain in forward path&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Gain in feedback&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+Design mode<BR><FONT COLOR="#ff6666">&nbsp;<FONT SIZE=1>(Settings--&gt;Gain
+config--&gt;Forward path)</FONT></FONT><FONT SIZE=1> (Settings--&gt;Gain
+config--&gt;Feedback path) <FONT COLOR="#ff6666">(Settings--&gt;Gain
+config--&gt;Design mode) </FONT></FONT><BR>Immediately after starting
+rltool, a user will see the control center GUI. A user can use and
+configure most features using this simple GUI. Following is a brief
+description of features: 
+</P>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#7f7f7f">
+			<OL>
+				<LI><P STYLE="margin-bottom: 0in">Menus: Menus are mostly similar
+				to the ones described in Section <A HREF="#rootlocus">2.2</A>. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">``Plant'' button: Click on this
+				button to edit the current transfer function. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">``Gain'' button: This displays
+				the current gain selected by the user. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Gain set (text mode): This
+				field displays a message ``Type Gain Here'' by default. A user
+				can type in a positive real valued gain in this field. Click on
+				``Ok'' to load this gain into Rltool. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Slider: A user can select gain
+				with a slider. The value of the gain selected is shown
+				immediately above the slider. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Max. Gain: This popup menu lets
+				a user select the maximum allowed gain for the rootlocus. Options
+				are 10, 50, 100, 500,...100,000. A user may also set the maximum
+				allowed gain to a different value using the Settings menu. 
+				</P>
+				<LI><P>Exit button: Click on this button to quit rltool. 
+				</P>
+			</OL>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0in">The most convenient way to use Rltool
+is to set a gain using the slider. The current gain is displayed
+above the slider bar and also in the ``gain'' button on the control
+center. Also, a window containing the following closed loop plots is
+continuously updated: 
+</P>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#7f7f7f">
+			<OL>
+				<LI><P STYLE="margin-bottom: 0in">Closed loop pole(s) and zero(s)
+								</P>
+				<LI><P STYLE="margin-bottom: 0in">Closed loop unit step response.
+								</P>
+				<LI><P STYLE="margin-bottom: 0in">Closed loop bode plot. 
+				</P>
+				<LI><P>Sensitivity plot 
+				</P>
+			</OL>
+		</TD>
+	</TR>
+</TABLE>
+<P>Note that ``closed loop plant'' may include either ``gain in
+feedback'' or ``gain in forward path''. Please see the ``Settings''
+section for how to do this. A user can also set the units (hz or
+rad/sec) for bode and sensitivity plots. Please see the section on
+&quot;Settings&quot;. <BR>There is a Design mode (Settings--&gt;Gain
+Configuration--&gt;Design mode) is most useful for control system
+design<BR><BR><FONT COLOR="#cc0000">In the design mode, any changes
+made with the mouse will <B>only affect the controller</B>. The user
+can edit the plant by clicking on the Plant button, and edit the
+sensor by clicking on the Sensor button. This feature makes it very
+convenient to design controllers rapidly.</FONT><BR><BR><BR>
+</P>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#bcff3d">
+			<H2><A NAME="toc8"></A><A NAME="htoc12"></A>2.4&nbsp;&nbsp;Frequency
+			design</H2>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0in">Rltool comes with two design modes...
+time domain (rootlocus) and frequency domain. You can select the
+frequency domain mode by clicking on ``Design <FONT FACE="symbol">&reg;</FONT>Frequency''.
+You will see the frequency magnitude plot of the open loop transfer
+function. The magnitude is shown in decibel and frequency in rad/sec.
+Click on the plot to determine the magnitude and frequency. The
+frequency domain part is still under development. It will be a great
+idea to take up this aspect and design it further! You can ofcourse
+return to the rootlocus mode by clicking on ``Design <FONT FACE="symbol">&reg;</FONT>Root
+Locus''. 
+</P>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#bcff3d">
+			<H2><A NAME="toc9"></A><A NAME="htoc13"></A>2.5&nbsp;&nbsp;Editing
+			of Plants</H2>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0in">These utilities are provided under the
+``Plant'' tab on the main window. In the Root Locus mode, you can
+edit your plant at the click of a mouse. The following options are
+provided. The function of most of these should be obvious: 
+</P>
+<TABLE WIDTH=987 BORDER=0 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=452>
+	<COL WIDTH=25>
+	<COL WIDTH=10>
+	<COL WIDTH=47>
+	<COL WIDTH=23>
+	<COL WIDTH=0>
+	<COL WIDTH=404>
+	<TR>
+		<TD COLSPAN=7 WIDTH=983 BGCOLOR="#7f7f7f">
+			<OL>
+				<LI><P STYLE="margin-bottom: 0in">Undo: Undo one change in the
+				(open loop) plant. 
+				</P>
+				<LI><P>Add pole: Select the pole to be added by clicking on the
+				graphics window. If you select a point with nonzero real part,
+				both the point and its complex conjugate are added. That is, if
+				<I>G</I>(<I>s</I>) is the current open loop transfer function and
+				you select a complex point <I>z</I>, the new open loop plant will
+				be 
+				</P>
+			</OL>
+		</TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=5 WIDTH=452 VALIGN=TOP BGCOLOR="#7f7f7f"></TD>
+		<TD ROWSPAN=5 COLSPAN=2 WIDTH=39 BGCOLOR="#7f7f7f">
+			<P><I>G</I>(<I>s</I>)&times; 
+			</P>
+		</TD>
+		<TD COLSPAN=3 WIDTH=76 BGCOLOR="#7f7f7f">
+			<P ALIGN=CENTER>1</P>
+		</TD>
+		<TD ROWSPAN=5 WIDTH=404 VALIGN=TOP BGCOLOR="#7f7f7f"></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 WIDTH=74 BGCOLOR="#666666">
+			<P>------------</P>
+		</TD>
+		<TD WIDTH=0 VALIGN=TOP BGCOLOR="#000000"></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3 WIDTH=76 BGCOLOR="#000000"></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3 WIDTH=76 BGCOLOR="#7f7f7f">
+			<P ALIGN=CENTER>(<I>s</I>-<I>z</I>)(<I>s</I>-<I>z</I><FONT SIZE=2><SUP>*</SUP></FONT>)</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3 WIDTH=76 BGCOLOR="#7f7f7f"></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=7 WIDTH=983 BGCOLOR="#7f7f7f">
+			<OL START=2>
+				<P STYLE="margin-bottom: 0in">where <I>z</I><FONT SIZE=2><SUP>*</SUP></FONT>
+				denotes the complex conjugate of <I>z</I>. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Remove pole: Click on the open
+				loop pole that you want to remove. If you click on a pole with
+				nonzero real part, both the pole and its complex conjugate are
+				removed. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Add zero: Similar to Add pole.
+				Zero(s) are added to open loop transfer function. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Remove zero: Similar to Remove
+				pole. Zero(s) are removed from the open loop transfer function. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Add cascade: You will be
+				prompted to enter a transfer function <I>H</I>(<I>s</I>)=<I>a</I>(<I>s</I>)/<I>b</I>(<I>s</I>).
+				If <I>G</I>(<I>s</I>) is the current transfer function, it is
+				modified to 
+				</P>
+				<P ALIGN=CENTER STYLE="margin-bottom: 0in"><I>G</I>(<I>s</I>)&times;
+				<I>H</I>(<I>s</I>)</P>
+				<P STYLE="margin-bottom: 0in">You will be prompted to ``accept''
+				this product. You can edit it if you wish (to truncate some
+				spurious decimal places etc). This command is like a simultaneous
+				addition of pole(s) and zero(s). However, in this case you are
+				required to enter these through the keyboard, instead of using
+				the mouse for the selection. 
+				</P>
+				<LI><P>Remove cascade: is like dividing <I>G</I>(<I>s</I>) by
+				<I>H</I>(<I>s</I>), i.e. the open loop plant is modified to 
+				</P>
+			</OL>
+		</TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=4 COLSPAN=2 WIDTH=481 VALIGN=TOP BGCOLOR="#7f7f7f"></TD>
+		<TD COLSPAN=2 WIDTH=61 BGCOLOR="#7f7f7f">
+			<P ALIGN=CENTER><I>G</I>(<I>s</I>)</P>
+		</TD>
+		<TD ROWSPAN=4 COLSPAN=3 WIDTH=433 VALIGN=TOP BGCOLOR="#7f7f7f"></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 WIDTH=61 BGCOLOR="#999999">
+			<P>&nbsp;---------</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 WIDTH=61 BGCOLOR="#000000"></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 WIDTH=61 BGCOLOR="#7f7f7f">
+			<P ALIGN=CENTER><I>H</I>(<I>s</I>)</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=7 WIDTH=983 BGCOLOR="#7f7f7f">
+			<OL START=8>
+				<LI><P>Edit plant: The current plant is displayed in a dialogue
+				box. You can modify it directly by typing in the appropriate
+				value. 
+				</P>
+			</OL>
+		</TD>
+	</TR>
+</TABLE>
+<P>When in the design mode, the changes made using the &quot;EDIT&quot;
+menu will only affect the controller transfer function. The plant
+remains unchanged until you change it by clicking on the plant
+button. However, the loop transfer function will be modified
+appropriately.</P>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#bcff3d">
+			<H2><A NAME="toc10"></A><A NAME="htoc14"></A>2.6&nbsp;&nbsp;Closed
+			loop responses</H2>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0in">There is a great deal of flexibility in
+rltool to see various closed loop responses. First you will have to
+select one ``gain configuration'' out of the possible two. Click on
+``Settings <FONT FACE="symbol">&reg;</FONT>Gain Configuration''. You
+will see a selection dialogue box with two choices:</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><IMG SRC="closedloop.jpg" NAME="graphics8" ALT="closedloop" ALIGN=BOTTOM WIDTH=367 HEIGHT=92 BORDER=0></P>
+<P STYLE="margin-bottom: 0in">You can choose the gain to be in the
+forward path as shown in the figure. <BR><BR>This corresponds to the
+option ``K in forward path''. You can choose to put ``K in the
+feedback path''. However, ``K in forward path'' is the default. <BR><BR>To
+see closed loop responses, click on ``Response <FONT FACE="symbol">&reg;</FONT>Closed
+Loop''. You will be prompted to click on a point of the rootlocus to
+select the ``operating point'' at which you want to see the closed
+loop response. Once you select the operating point, you are done!
+<BR><BR>Rltool calculates the closed loop transfer function for the
+configuration you have selected, i.e. the closed loop transfer
+function for ``K in forward path'' is 
+</P>
+<CENTER>
+	<TABLE WIDTH=83 BORDER=0 CELLPADDING=2 CELLSPACING=0>
+		<COL WIDTH=0>
+		<COL WIDTH=76>
+		<TR>
+			<TD ROWSPAN=5 WIDTH=0>
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=76>
+				<P ALIGN=CENTER><I>G</I> <I>K</I></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=76 BGCOLOR="#ffffff">
+				<P>------------</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=76 BGCOLOR="#000000"></TD>
+		</TR>
+		<TR>
+			<TD WIDTH=76>
+				<P ALIGN=CENTER>1+<I>G</I> <I>K</I></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=76></TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<P STYLE="margin-bottom: 0in">and the closed loop transfer function
+for ``K in feedback path'' is 
+</P>
+<CENTER>
+	<TABLE WIDTH=71 BORDER=0 CELLPADDING=2 CELLSPACING=0>
+		<COL WIDTH=0>
+		<COL WIDTH=64>
+		<TR>
+			<TD ROWSPAN=5 WIDTH=0>
+				<P><BR>
+				</P>
+			</TD>
+			<TD WIDTH=64>
+				<P ALIGN=CENTER><I>G</I></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=64 BGCOLOR="#ffffff">
+				<P>----------</P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=64 BGCOLOR="#000000"></TD>
+		</TR>
+		<TR>
+			<TD WIDTH=64>
+				<P ALIGN=CENTER>1+<I>GK</I></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD WIDTH=64></TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<P STYLE="margin-bottom: 0in">You will see a selection menu that
+shows the following: 
+</P>
+<TABLE WIDTH=987 BORDER=0 CELLPADDING=2 CELLSPACING=0>
+	<COL WIDTH=471>
+	<COL WIDTH=81>
+	<COL WIDTH=423>
+	<TR>
+		<TD COLSPAN=3 WIDTH=983 BGCOLOR="#7f7f7f">
+			<OL>
+				<LI><P STYLE="margin-bottom: 0in">The gain corresponding to
+				operating point you selected. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Whether the closed loop system
+				is stable or unstable. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Impulse response: Click here to
+				see the impulse response! 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Step response selection: Unit
+				step response is displayed. A ``details'' button in the step
+				response also displays parameters such as percent overshoot, rise
+				time, settling time, <FONT FACE="symbol">z</FONT> corresponding
+				to second order approximation etc. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Ramp response: Unit ramp
+				response. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Arbitrary input: You can enter
+				piece-wise linear, single valued inputs through a graphics
+				window. Use the mouse (press left button and drag) to ``draw''
+				this input. There are a host of features like ``undo'', ``abort''
+				etc which can be used. You can also resize your window to suit
+				the range of your input. Click ``Edit <FONT FACE="symbol">&reg;</FONT>Ok''
+				when you are done. If your input is single-valued, you will see
+				the response of the closed loop system to this input. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Sinusoidal input: The input is
+				of the form 
+				</P>
+				<P ALIGN=CENTER STYLE="margin-bottom: 0in"><I>A</I> <I>sin</I> (<FONT FACE="symbol">w</FONT>
+				<I>t</I>)</P>
+				<P STYLE="margin-bottom: 0in">Output is simulated, by default for
+				one of the input and is plotted. The default settings are <I>A</I>=1
+				and <FONT FACE="symbol">w</FONT>=1 &nbsp; <I>rad</I>/<I>sec</I>.
+				These can be changed by clicking on ``Settings'' button in the
+				sinusoidal response window. You must close this window to return
+				to the response selection menu. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Frequency response (bode plot)
+				of closed loop system. There is a choice in the units (Rad/sec)
+				or (Hz). These are available in ``Options'' menu in the frequency
+				response window. 
+				</P>
+				<LI><P>Sensitivity plot: Sensitivity is defined as the transfer
+				function between the input <I>u</I>(<I>t</I>) and the <I>error</I>
+				<I>e</I>(<I>t</I>). For the system shown in the above figure, the
+				sensitivity can be found to be 
+				</P>
+			</OL>
+		</TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=4 WIDTH=471 VALIGN=TOP BGCOLOR="#7f7f7f"></TD>
+		<TD WIDTH=81 BGCOLOR="#7f7f7f">
+			<P ALIGN=CENTER>1</P>
+		</TD>
+		<TD ROWSPAN=4 WIDTH=423 VALIGN=TOP BGCOLOR="#7f7f7f"></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=81 BGCOLOR="#999999">
+			<P>-------------</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=81 BGCOLOR="#000000"></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=81 BGCOLOR="#7f7f7f">
+			<P ALIGN=CENTER>1+<I>kG</I>(<I>s</I>)</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3 WIDTH=983 BGCOLOR="#7f7f7f">
+			<OL START=9>
+				<P>This transfer function is evaluated on the imaginary axis (by
+				substituting <I>s</I>=<I>i</I><FONT FACE="symbol">w</FONT>) and
+				the resulting (magnitude) plot is shown for various values of <FONT FACE="symbol">w</FONT>.
+				Options are similar to above. 
+				</P>
+			</OL>
+			<P>Click on ``cancel'' to close the response selection menu and
+			return to the main window of rltool. 
+			</P>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#bcff3d">
+			<H2><A NAME="toc11"></A><A NAME="htoc15"></A>2.7&nbsp;&nbsp;Other
+			responses</H2>
+		</TD>
+	</TR>
+</TABLE>
+<H3>2.7.1&nbsp;&nbsp;Nyquist plot</H3>
+<P>Nyquist plot of the open loop plant <I>G</I>(<I>s</I>) can be seen
+by clicking on ``Response <FONT FACE="symbol">&reg;</FONT>Nyquist''.
+The gain and phase margin is displayed on the plot. If you find that
+your plot is too coarse or cluttered, you can change the minimum and
+maximum frequency in ``Settings <FONT FACE="symbol">&reg;</FONT>Nyquist-Nichols
+plot''. The frequency units can be changed in ``Settings <FONT FACE="symbol">&reg;</FONT>Frequency
+units''. 
+</P>
+<H3>2.7.2&nbsp;&nbsp;Nichols plot</H3>
+<P>Nichols plot for <I>G</I>(<I>s</I>) is obtained by selecting
+``Response <FONT FACE="symbol">&reg;</FONT>Nichols''. If the grid (in
+the main menu) is set to ``on'' you will see the logarithmic grid
+superimposed on the Nichols plot. Here too, you can select the
+desired frequency units. 
+</P>
+<H3>2.7.3&nbsp;&nbsp;Popov plot</H3>
+<P STYLE="margin-bottom: 0in">The Popov plot can be used to predict
+the stability of the closed loop system with a sector bound
+nonlinearity in loop. We plot real part of <I>G</I>(<I>i</I><FONT FACE="symbol">w</FONT>)
+on the real axis and <FONT FACE="symbol">w</FONT> <I>Imaginary</I> &nbsp;
+<I>G</I>(<I>i</I><FONT FACE="symbol">w</FONT>) on the imaginary axis.
+A simple construction then gives the range of the ``Popov sector''
+and the ``multiplier''. Please see any standard text on nonlinear
+systems for more details on the Popov plot. 
+</P>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#bcff3d">
+			<H2><A NAME="toc12"></A><A NAME="htoc19"></A>2.8&nbsp;&nbsp;Saving
+			and loading plants</H2>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0in">To save your current plant, click on
+``Save <FONT FACE="symbol">&reg;</FONT>Save''. You will be prompted
+to enter the filename to which the plant should be written. <BR><BR>To
+load an existing plant from a file, click on &quot;Save <FONT FACE="symbol">&reg;</FONT>Load&quot;.
+You will be prompted to enter the filename. <BR><BR>You must have the
+appropriate read/write permissions to do this operation. 
+</P>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#bcff3d">
+			<H2><A NAME="toc13"></A><A NAME="htoc20"></A>2.9&nbsp;&nbsp;Settings</H2>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-bottom: 0in">We now look at the various settings
+that a user can access: 
+</P>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#7f7f7f">
+			<OL>
+				<LI><P STYLE="margin-bottom: 0in">Rootlocus: Set the maximum
+				allowed gain, <I>K<FONT SIZE=2><SUB>max</SUB></FONT></I> in
+				rootlocus. The rootlocus is plotted for the gain range (0,<I>K<FONT SIZE=2><SUB>max</SUB></FONT></I>).
+								</P>
+				<LI><P STYLE="margin-bottom: 0in">Magnitude plot: Set the minimum
+				frequency, maximum frequency and the frequency step for the (open
+				loop frequency) Magnitude plot. The unit for the frequency is
+				rad/sec. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Nyquist-Nichols plot: Frequency
+				settings similar to above, for Nyquist plot and Nichols plot. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Bode plot: Frequency settings
+				for the (closed loop) Bode plot. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Dynamic response: Set the
+				maximum simulation time and the timestep for all dynamic
+				responses (impulse, step, ramp, arbitrary input, sinusoidal
+				input). 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Sensitivity plot: Frequency
+				settings for the sensitivity plot. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Graphics attributes: Graphics
+				attributes like font, colour etc can be set from here. 
+				</P>
+				<LI><P STYLE="margin-bottom: 0in">Gain configuration: Two options
+				are possible for using rltool<BR>(a) Gain, K, is in the forward
+				path.<BR>(b) Gain is in the feedback path.<BR>The default is (a).
+				Selecting a particular gain configuration also results in that
+				being displayed in the control center. For example, figure 2.2
+				shows that the current mode is ``Gain in forward path''. 
+				</P>
+				<LI><P>Browser path: Applicable only for *nix systems. You can
+				set a default browser path for viewing this HTML manual while
+				running rltool. The default browser is mozilla (only because this
+				browser happens to be bundled into most *nix systems that I have
+				seen). You can, for instance, type the full path to konqueror, or
+				Opera, or any other web browser. This browser will be used to
+				open the HTML manual while running rltool. Also see ``Help <FONT FACE="symbol">&reg;</FONT>HTML
+				manual'' 
+				</P>
+			</OL>
+		</TD>
+	</TR>
+</TABLE>
+<P><BR>In addition, the default configuration variables will be saved
+in a file called Rltool_Config-1.6.sci. This file is machine
+generated, however you can edit it if you so wish. 
+</P>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#bcff3d">
+			<H2><A NAME="toc14"></A><A NAME="htoc21"></A>2.10&nbsp;&nbsp;Help</H2>
+		</TD>
+	</TR>
+</TABLE>
+<P>A short online help is provided on some topics. 
+</P>
+<TABLE CELLPADDING=10 CELLSPACING=2>
+	<TR>
+		<TD BGCOLOR="#00ffff">
+			<HR>
+			<P><A HREF="whatis001.html"><FONT COLOR="#800000"><IMG SRC="previous_motif.gif" NAME="graphics9" ALT="Previous" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=1></FONT></A>
+						<A HREF="index.html"><FONT COLOR="#000080"><IMG SRC="contents_motif.gif" NAME="graphics10" ALT="Up" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=1></FONT></A><A HREF="whatis003.html"><FONT COLOR="#000080"><IMG SRC="next_motif.gif" NAME="graphics11" ALT="Next" ALIGN=BOTTOM WIDTH=16 HEIGHT=16 BORDER=1></FONT></A>
+						</P>
+		</TD>
+	</TR>
+</TABLE>
+<P><BR><BR>
+</P>
+</BODY>
+</HTML>

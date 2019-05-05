@@ -1,0 +1,15 @@
+I gratefully acknowledge the contribution of the following people in 
+developing RLTOOL.
+
+In version 1.2, the following (modified)functions contributed by Jos Paulo
+Vilela Soares da Cunha (E-mail: jpaulo@ieee.org), Department of Electronics
+and Telecommunication Engineering, State University of Rio de Janeiro -
+Brazil, have been added.
+
+modified_bode.sci
+modified_nyquist.sci
+modified_black.sci
+modified_gainplot.sci
+modified_repfreq.sci
+
+

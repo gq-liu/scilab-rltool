@@ -1,0 +1,142 @@
+Rltool 1.7
+for Scilab 4.1.1
+Minor improvements and bug fixes
+a "Welcomemessage" menu added
+Some bugs related to Scilab graphics have been removed, so additional 
+features have been added, e.g. both Magnitude and Phase plot in "preview"
+
+improved documentation
+
+Rltool 1.6
+for Scilab 3.1.1
+
+Many important internal changes. Gui improved. 
+
+Slider for gain change.
+
+Closed loop poles are marked on the rootlocus.
+
+A "Design mode" provided for fast control system design.
+
+incorporated with the "new" graphics style of scilab. 
+"save/load" menu incorporated into the "plant" menu.
+
+All configuration parameters are accessible to the user in an Ascii file called Rltool-1.*_Config.sci. 
+
+Plant can be saved/loaded in a ascii file, instead of a binary file as before. 
+----------------------------------------------------------
+Rltool beta 1.5
+For Scilab 3.0
+
+Bug removed: rltool didnot work with Windows version... changed xgetmouse() to xclick()
+
+Documentation has been improved. Several inconsistencies and mistakes have
+been corrected.
+
+The "Edit" menu has been renamed as "Plant". Thus, to add a pole you would
+click on Plant->add pole, instead of Edit->add pole.
+
+Removed bug: rltool-1.4 crashed with scilab 3.0, removed a bug with the 
+help of Scilab team.
+
+html manual can now be called from within rltool. The desired browser can 
+be set and it can be started on a *nix terminal
+-----------------------------------------------------------------------
+The following changes have been made in version 1.4 of RLTOOL
+
+the directory devel has been added for people who wish to tweak/develop 
+rltool. 
+
+A global choice of frequency units is available. 
+
+Numerical values of closed loop parameters are available. 
+
+At every value of the gain, you can "preview" closed loop poles and zeros, 
+step response, closed loop bode plot and sensitivity plot. These are 
+ofcourse, also available through Response-->closedloop.
+
+You can select the gain configuration to be "K in forward path" or "K in 
+feedback path". 
+
+An option for "number of cycles" has been added in the sinusoidal 
+response.
+
+Popov plot has been added. 
+
+Documentation has been greatly increased and (hopefully) improved.
+
+--------------------------------------------------------
+Following changes have been made in version 1.3 of RLTOOL 
+
+Removed a bug of step response details. Can handle non-minimum phase step 
+responses. zeta corresponding to second order approximation is displayed. 
+
+Extensive changes and reorganization of responses. You can now view 
+following closed loop responses
+	Impulse
+	Step
+	Ramp
+	Arbitrary piece wise linear, single valued input
+	Sinusoidal (one period)
+	Bode plot
+	Sensitivity plot
+
+in addition to
+	Nyquist plot
+	Nichols plot
+
+Documentation has been slightly improved and organized. 
+------------------------------------------------------------------------------------ 
+Following changes have been made in version 1.2 of RLTOOL 
+
+Added frequency plots (Nyquist, Bode, Nichols, sensitivity) with 
+choice of units in Hz and Rad/sec. These codes have been provided by Jose 
+Paulo Vilela Soares da Cunha, Brazil. 
+
+Added step response details. 
+
+Improved error handling. 
+
+Added pole-zero plot of transfer function. 
+
+Added UNDO option to EDIT. This enables u to undo changes to your plant. 
+
+Online help added. 
+
+Man pages are included in both *.cat and *.htm formats. The former are 
+retained to enable help users with older Scilab versions. 
+
+Added a cool logo for RLTOOL :-) 
+-------------------------------------------------------------------- 
+Following changes have been made in the version 1.1 of rltool 
+Many bugs have been removed, but many more may remain. Please let me 
+know bug reports. 
+  
+
+Added sgrid() to evans root locus 
+Utility for checking \omega_n and \zeta. 
+
+Added sensitivity plot to menu. 
+
+2-D grid sizing problem solved. (bug removed) 
+Grid didnot "fit in" the plot in old version. 
+
+Fixed the bug "cancel". (bug removed) 
+Cancel was not working in old version 
+
+Added functions from plotlib. Installation of plotlib is no longer 
+essential. 
+rltool can now be used without installing Plotlib 
+
+Fixed bug of zooming step response. (bug removed) 
+Step response couldnot be zoomed 
+
+Recursion problem removed. (bug removed) 
+Stack was getting full in old version 
+
+Save/load problem removed. (bug removed) 
+Saving/loading was erratic in old version. 
+
+==================================================== 
+please use rltool and report bugs to ishan@ee.iitb.ac.in 
+==================================================== 

@@ -1,0 +1,49 @@
+
+mprintf("Rltool version 1.7.2 - GUI toolbox for SISO system design\n");
+
+if isdef("rltoollib") then
+	warning("Rltool  is already loaded");
+	return;
+end
+
+etc_tlbx  = get_absolute_file_path("rltool.start");
+etc_tlbx  = getshortpathname(etc_tlbx);
+root_tlbx = strncpy( etc_tlbx, length(etc_tlbx)-length("\etc") );
+
+//Load  functions library
+// =============================================================================
+mprintf("\tLoad macros\n");
+pathmacros = pathconvert( root_tlbx ) + "macros" + filesep();
+rltoollib = lib(pathmacros);
+clear pathmacros;
+
+// load gateways
+// =============================================================================
+//mprintf("\tLoad gateways\n");
+//ilib_verbose(0);
+//exec(pathconvert(root_tlbx+"/sci_gateway/loader_gateway.sce",%f));
+
+// Load demos
+// =============================================================================
+//if or(getscilabmode() == ["NW";"STD"]) then
+//	mprintf("\tLoad demos\n");
+//	pathdemos = pathconvert(root_tlbx+"/demos/tftb.dem.gateway.sce",%F,%T);
+//	add_demo("Time Frequency Toolbox",pathdemos);
+//	clear pathdemos add_demo;
+//end
+
+// Load and add help chapter
+// =============================================================================
+if or(getscilabmode() == ["NW";"STD"]) then
+        mprintf("\tLoad help\n");
+        path_addchapter = pathconvert(root_tlbx+"/jar");
+        if ( isdir(path_addchapter) <> [] ) then
+                add_help_chapter("stftb", path_addchapter, %F);
+                clear add_help_chapter;
+        end
+        clear path_addchapter;
+end
+mprintf("rltool is loaded. Type ""rlt()"" to start rltool-1.7\n");
+s=poly(0,'s');
+clear root_tlbx;
+clear etc_tlbx;

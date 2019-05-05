@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<refentry version="5.0-subset Scilab" xml:id="rltool_settings" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:db="http://docbook.org/ns/docbook">
+  <info>
+    <pubdate>$LastChangedDate: 2008-03-26 09:50:39 +0100 (mer., 26 mars 2008)
+    $</pubdate>
+  </info>
+
+  <refnamediv>
+    <refname>Settings</refname>
+
+    <refpurpose> Settings</refpurpose>
+  </refnamediv>
+
+
+  <refsection>
+    <title>Description</title>
+
+    <para> Settings  menu  lets  you  set  parameters 
+for various plots and also for your present 
+working directory and graphics attributes.
+You can set parameters for all plots in the
+respective menu. For example, gain settings
+for Rootlocus are in  'Settings->Rootlocus'.
+ </para>
+
+  </refsection>
+
+
+  <refsection>
+    <title>Authors</title>
+
+    <simplelist type="vert">
+      <member>Holger Nahrstaedt - 2010</member>
+      <member>Ishan   Pendharkar - 2007</member>
+    </simplelist>
+  </refsection>
+</refentry>

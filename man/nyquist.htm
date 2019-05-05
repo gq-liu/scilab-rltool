@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-1">
+	<TITLE>nyquist</TITLE>
+	<META NAME="GENERATOR" CONTENT="StarOffice/5.2 (Linux)">
+	<META NAME="CREATED" CONTENT="20030711;23422500">
+	<META NAME="CHANGEDBY" CONTENT="Jose Paulo Vilela Soares da Cun">
+	<META NAME="CHANGED" CONTENT="20030712;383400">
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<P ALIGN=CENTER>Scilab Function 
+</P>
+<P><B>nyquist - nyquist plot </B>
+</P>
+<H3><FONT COLOR="#0000ff">Calling Sequence</FONT></H3>
+<DL>
+	<DD><TT>nyquist( sl,[fmin,fmax] [,step] [,comments]<TT> <TT>[,f_unit]</TT></TT>)
+	</TT>
+	</DD><DD>
+	<TT>nyquist( sl, frq [,comments]<TT> <TT>[,f_unit]</TT></TT>) </TT>
+	</DD><DD>
+	<TT>nyquist(frq,db,phi [,comments]<TT> <TT>[,f_unit]</TT></TT>) </TT>
+	</DD><DD STYLE="margin-bottom: 0.2in">
+	<TT>nyquist(frq, repf [,comments]<TT> <TT>[,f_unit]</TT></TT>) </TT>
+	</DD></DL>
+<H3>
+<FONT COLOR="#0000ff">Parameters</FONT></H3>
+<UL>
+	<UL>
+		<LI><P STYLE="margin-bottom: 0in"><TT><B>sl </B></TT>: <TT><B>syslin</B></TT>
+		list (SIMO linear system in continuous or discrete time).</P>
+		<LI><P STYLE="margin-bottom: 0in"><TT><B>fmin,fmax </B></TT>: real
+		scalars (frequency bounds).</P>
+		<LI><P STYLE="margin-bottom: 0in"><TT><B>step </B></TT>: real
+		(logarithmic discretization step).</P>
+		<LI><P STYLE="margin-bottom: 0in"><TT><B>comments </B></TT>: string
+		vector (captions). 
+		</P>
+		<LI><P STYLE="margin-bottom: 0in"><TT><B>frq </B></TT>: vector or
+		matrix of frequencies  (one row for each output of <TT><B>sl</B></TT>).
+				</P>
+		<LI><P STYLE="margin-bottom: 0in"><TT><B>db,phi </B></TT>: real
+		matrices of modulus (in dB) and phases (in degrees) (one row for
+		each output of <TT><B>sl</B></TT>).</P>
+		<LI><P STYLE="margin-bottom: 0in"><TT><B>repf </B></TT>: matrix of
+		complex numbers. Frequency response (one row for aech output of <TT><B>sl</B></TT>)
+				</P>
+	</UL>
+</UL>
+<UL>
+	<UL>
+		<LI><P><TT><TT><B>f_unit</B></TT><B> </B></TT>: desired frequency
+		unit.</P>
+	</UL>
+</UL>
+<H3><FONT COLOR="#0000ff">Description</FONT></H3>
+<P>Nyquist plot, i.e., Imaginary part versus Real part of the
+frequency response of <TT><B>sl</B></TT>. 
+</P>
+<P>For continous time systems <TT><B>sl(%i*w)</B></TT> is plotted (w
+is the frequency in rad/s). For discrete-time systems or discretized
+systems <TT><B>sl(exp(%i*w*dt))</B></TT> is used (<TT><B>dt=1</B></TT>
+for discrete-time systems and <TT><B>dt=sl('dt')</B></TT> is the
+sampling period for discretized systems). 
+</P>
+<P><TT><B>sl</B></TT> can be a continuous-time or a discrete-time
+SIMO system (see <TT><B>syslin</B></TT>). In case of multi-output the
+outputs are plotted with different symbols. 
+</P>
+<P>The frequencies are given by the bounds <TT><B>fmin,fmax</B></TT>
+or by a row-vector (or a matrix for multi-output) <TT><B>frq</B></TT>.
+</P>
+<P><TT><B>f_unit </B><SPAN STYLE="font-weight: medium">selects the
+desired unit for frequencies: 'h' for Hz or 'r' for rad/s. The
+default frequency unit is Hz.</SPAN></TT></P>
+<P><TT><B>step</B></TT> is the (logarithmic ) discretization step.
+(see <TT><B>calfrq</B></TT> for the choice of default value). 
+</P>
+<P><TT><B>comments</B></TT> is a vector of character strings
+(captions). 
+</P>
+<P><TT><B>db,phi</B></TT> are the matrices of modulus (in dB) and
+phases (in degrees). (One row for each response). 
+</P>
+<P><TT><B>repf</B></TT> is a matrix of complex numbers. One row for
+each response. 
+</P>
+<P>Default values for <TT><B>fmin</B></TT> and <TT><B>fmax</B></TT>
+are <TT><B>1.d-3</B></TT>, <TT><B>1.d+3</B></TT> if <TT><B>sl</B></TT>
+is continuous-time or <TT><B>1.d-3</B></TT>, <TT><B>0.5</B></TT> if
+<TT><B>sl</B></TT> is discrete-time. 
+</P>
+<P>Automatic discretization of frequencies is made by <TT><B>calfrq</B></TT>.
+</P>
+<H3><FONT COLOR="#0000ff">Examples</FONT></H3>
+<UL>
+	<PRE>xbasc();
+s=poly(0,'s');
+h=syslin('c',(s^2+2*0.9*10*s+100)/(s^2+2*0.3*10.1*s+102.01));
+comm='(s^2+2*0.9*10*s+100)/(s^2+2*0.3*10.1*s+102.01)';
+nyquist(h,0.01,100,comm);
+h1=h*syslin('c',(s^2+2*0.1*15.1*s+228.01)/(s^2+2*0.9*15*s+225))
+xbasc();
+nyquist([h1;h],0.01,100,['h1';'h'])
+xbasc();nyquist([h1;h])
+ </PRE>
+</UL>
+<H3><FONT COLOR="#0000ff">See Also</FONT></H3>
+<UL>
+	<P><TT><A HREF="bode.htm"><B>bode</B></A></TT>&nbsp;&nbsp;<TT><A HREF="black.htm"><B>black</B></A></TT>&nbsp;&nbsp;<TT><A HREF="../control/calfrq.htm"><B>calfrq</B></A></TT>&nbsp;&nbsp;<TT><A HREF="../control/freq.htm"><B>freq</B></A></TT>&nbsp;&nbsp;<TT><A HREF="../control/repfreq.htm"><B>repfreq</B></A></TT>&nbsp;&nbsp;<TT><A HREF="../control/phasemag.htm"><B>phasemag</B></A></TT>&nbsp;&nbsp;</P>
+</UL>
+</BODY>
+</HTML>

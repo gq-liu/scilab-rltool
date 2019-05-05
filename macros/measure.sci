@@ -1,0 +1,38 @@
+function measure()
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 2 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program; if not, write to the Free Software
+//  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+// Authors
+//   Holger Nahrstaedt -  2010
+//   Ishan Pendharkar - 2001-2007
+global k g  handles
+		// wait for a mouse click in any window
+//xset('window',0)
+scf(0)
+		[c_i,c_x,c_y,c_w,c_m]=xclick()
+ // ******************* In Main Window *********************   		
+		if c_i==3 & c_w==0 then, //if click on main window...
+			k=getgain(c_x,c_y); // get gain on root locus
+		end;
+		if k>0 then,
+		r=roots(denom(g/(1+k*g)));
+		markpoles(r);
+		if k>get(handles.GainSlider,'max') then,
+			set(handles.GainSlider,'value',k);
+			set(handles.ScaleValue,'string',string(k));
+		end;
+		end;	
+//return;
+
+
+endfunction

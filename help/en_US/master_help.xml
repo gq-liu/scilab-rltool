@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+<!--Begin Entities-->
+<!ENTITY a043e0912b1bac9fd21f768b8b7637db1 SYSTEM "/Users/mac126/code/scilabGUI/rltool/help/en_US/rltool_about.xml">
+<!ENTITY a5dca239f15353b2351423843137715e4 SYSTEM "/Users/mac126/code/scilabGUI/rltool/help/en_US/rltool_bodeplot.xml">
+<!ENTITY a1ca002710cfb8d565300beb9063e282a SYSTEM "/Users/mac126/code/scilabGUI/rltool/help/en_US/rltool_closedloopresponse.xml">
+<!ENTITY a3b4aab67380f9298d6ef07ecc1377249 SYSTEM "/Users/mac126/code/scilabGUI/rltool/help/en_US/rltool_license.xml">
+<!ENTITY ab0b6f2b0e16f8766da66b8396425922d SYSTEM "/Users/mac126/code/scilabGUI/rltool/help/en_US/rltool_loadandsave.xml">
+<!ENTITY a9b5c116583b38d6f6582f8f6fd5e9c83 SYSTEM "/Users/mac126/code/scilabGUI/rltool/help/en_US/rltool_magplot.xml">
+<!ENTITY a06078ae80d8cd4b514f2ba4d46b1008f SYSTEM "/Users/mac126/code/scilabGUI/rltool/help/en_US/rltool_nyqplot.xml">
+<!ENTITY aff0577011aec590e800558e2f299fbf8 SYSTEM "/Users/mac126/code/scilabGUI/rltool/help/en_US/rltool_plzr.xml">
+<!ENTITY a3881f2f298290f3dfc9c141535d6f80e SYSTEM "/Users/mac126/code/scilabGUI/rltool/help/en_US/rltool_rootlocus.xml">
+<!ENTITY a408c7ee329ea3b2095202c0bd72f4093 SYSTEM "/Users/mac126/code/scilabGUI/rltool/help/en_US/rltool_sensitivityplot.xml">
+<!ENTITY a2430416bff7c1d12f2c8096729c18022 SYSTEM "/Users/mac126/code/scilabGUI/rltool/help/en_US/rltool_settings.xml">
+<!ENTITY a902b4bb623df89277acce77cccd71034 SYSTEM "/Users/mac126/code/scilabGUI/rltool/help/en_US/rltool_step_par.xml">
+<!ENTITY a6f42e165c37d1b4c9c60922eb011f96c SYSTEM "/Users/mac126/code/scilabGUI/rltool/help/en_US/rltool_todo.xml">
+<!--End Entities-->
+]>
+<book version="5.0-subset Scilab" xml:lang="en_US"
+      xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:mml="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+  <info xml:id='rltool_toolbox_manual'>
+    <title>RLtool Toolbox</title>
+  </info>
+
+<part xml:id='section_37943da247189737fcfe532bbf6965c9'>
+<title>RLtool Toolbox</title>
+&a043e0912b1bac9fd21f768b8b7637db1;
+&a5dca239f15353b2351423843137715e4;
+&a1ca002710cfb8d565300beb9063e282a;
+&a3b4aab67380f9298d6ef07ecc1377249;
+&ab0b6f2b0e16f8766da66b8396425922d;
+&a9b5c116583b38d6f6582f8f6fd5e9c83;
+&a06078ae80d8cd4b514f2ba4d46b1008f;
+&aff0577011aec590e800558e2f299fbf8;
+&a3881f2f298290f3dfc9c141535d6f80e;
+&a408c7ee329ea3b2095202c0bd72f4093;
+&a2430416bff7c1d12f2c8096729c18022;
+&a902b4bb623df89277acce77cccd71034;
+&a6f42e165c37d1b4c9c60922eb011f96c;
+</part>
+</book>
